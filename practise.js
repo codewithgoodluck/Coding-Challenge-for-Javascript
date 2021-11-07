@@ -49,5 +49,25 @@
 
 // factoria(4)
 
+// Check if a letter is Palindr
+
+function Check(str){
+     pallandrum = true;
+
+    for(var i=0; i < str.length; i++){
+
+        if(str[i] == str[(str.length-i)-1]){
+            pallandrum = true;
+        }
+        else{
+            pallandrum = false; 
+        }
+    }
+    return pallandrum;
+
+}
+
+console.log(Check("madam")); //true
+
 
 

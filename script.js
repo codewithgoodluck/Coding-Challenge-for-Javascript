@@ -70,21 +70,36 @@
 
 
 
-function palindrome(str){
-    isPalindrome = true;
-    for(let i =0; i< str.length; i++){
-        console.log(str[i])
-      if(str[i]== str[(str.length - i)-1]){
-        isPalindrome = true;
-      }
-      else{
-        isPalindrome = false;
-      }
-    }
-    return isPalindrome;
-  }
-  console.log(palindrome("madam")); //true
+// function palindrome(str){
+//     isPalindrome = true;
+//     for(let i =0; i< str.length; i++){
+//         console.log(str[i])
+//       if(str[i]== str[(str.length - i)-1]){
+//         isPalindrome = true;
+//       }
+//       else{
+//         isPalindrome = false;
+//       }
+//     }
+//     return isPalindrome;
+//   }
+//   console.log(palindrome("madam")); //true
 //   console.log(palindrome("foster")); // false
+
+
+// Find the Longest Word in a sentence 
+
+function findLongestWord(str){
+  var longestWord=""
+  var newLongestworkd=str.split(" ")
+  for(var word of newLongestworkd ){
+    if(word.length > longestWord.length) longestWord = word
+  }
+  return word.length
+}
+
+console.log(findLongestWord("This is Goodluck"))
+
 
 
 
