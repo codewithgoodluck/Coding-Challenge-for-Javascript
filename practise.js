@@ -51,23 +51,23 @@
 
 // Check if a letter is Palindr
 
-function Check(str){
-     pallandrum = true;
+// function Check(str){
+//      pallandrum = true;
 
-    for(var i=0; i < str.length; i++){
+//     for(var i=0; i < str.length; i++){
 
-        if(str[i] == str[(str.length-i)-1]){
-            pallandrum = true;
-        }
-        else{
-            pallandrum = false; 
-        }
-    }
-    return pallandrum;
+//         if(str[i] == str[(str.length-i)-1]){
+//             pallandrum = true;
+//         }
+//         else{
+//             pallandrum = false; 
+//         }
+//     }
+//     return pallandrum;
 
-}
+// }
 
-console.log(Check("madam")); //true
+// console.log(Check("madam")); //true
 
 
 

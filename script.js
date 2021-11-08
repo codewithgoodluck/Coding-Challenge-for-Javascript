@@ -89,16 +89,41 @@
 
 // Find the Longest Word in a sentence 
 
-function findLongestWord(str){
-  var longestWord=""
-  var newLongestworkd=str.split(" ")
-  for(var word of newLongestworkd ){
-    if(word.length > longestWord.length) longestWord = word
+// function findLongestWord(str){
+//   var longestWord=""
+//   var newLongestworkd=str.split(" ")
+//   for(var word of newLongestworkd ){
+//     if(word.length > longestWord.length) longestWord = word
+//   }
+//   return word.length
+// }
+
+// console.log(findLongestWord("This is Goodluck"))
+
+// Capitalize the first word in a word
+
+
+function CapitalizWord(word){
+  // var capital= word.toLowerCase().split(" ")
+  // for(var i=0; i< capital.length; i++){
+  //   capital[i] = capital[i][0].toUpperCase() + capital[i].slice(1)
+  // }
+
+  // return capital.join(" ")
+
+  var capital = word.toLowerCase().split(" ")
+  for(var i =0; i<capital.length; i++){
+    capital[i]=capital[i][0].toUpperCase() + capital[i].slice(1) 
   }
-  return word.length
+
+  return capital.join(" ")
+
+
 }
 
-console.log(findLongestWord("This is Goodluck"))
+console.log(CapitalizWord("She leaves in me"))
+
+
 
 
 
