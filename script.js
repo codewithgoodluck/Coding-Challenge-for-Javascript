@@ -103,25 +103,50 @@
 // Capitalize the first word in a word
 
 
-function CapitalizWord(word){
-  // var capital= word.toLowerCase().split(" ")
-  // for(var i=0; i< capital.length; i++){
-  //   capital[i] = capital[i][0].toUpperCase() + capital[i].slice(1)
-  // }
+// function CapitalizWord(word){
+//   // var capital= word.toLowerCase().split(" ")
+//   // for(var i=0; i< capital.length; i++){
+//   //   capital[i] = capital[i][0].toUpperCase() + capital[i].slice(1)
+//   // }
 
-  // return capital.join(" ")
+//   // return capital.join(" ")
 
-  var capital = word.toLowerCase().split(" ")
-  for(var i =0; i<capital.length; i++){
-    capital[i]=capital[i][0].toUpperCase() + capital[i].slice(1) 
-  }
+//   var capital = word.toLowerCase().split(" ")
+//   for(var i =0; i<capital.length; i++){
+//     capital[i]=capital[i][0].toUpperCase() + capital[i].slice(1) 
+//   }
 
-  return capital.join(" ")
+//   return capital.join(" ")
 
 
-}
+// }
 
-console.log(CapitalizWord("She leaves in me"))
+// console.log(CapitalizWord("She leaves in me"))
+
+
+
+
+
+
+
+// Check the largest number in an Array 
+
+// function checkLargestNum(num){
+// var CheckmaxNum=[]
+
+// for(var i=0; i<num.length; i++){
+//   var maxNum=num[i][0]
+//   for(var j=0; j< num[i].length; j++){
+//     if(maxNum > num[i][j]){
+//       maxNum=maxNum
+//     }
+//   }
+//   CheckmaxNum.push(maxNum)
+//   }
+//   return CheckmaxNum;
+// }
+
+console.log(checkLargestNum([[4,5,8,9], [10,5,11,43,56], [34,89,46,78,19],[7,89,23,46,78]]))
 
 
 
